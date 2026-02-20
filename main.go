@@ -13,66 +13,59 @@ func main() {
 	inputHTML := "pdfgo.html"
 	outputPDF := "output.pdf"
 
-	// 1. Initialize generator
 	pdfg, err := wkhtmltopdf.NewPDFGenerator()
 	if err != nil {
-		log.Fatalf("Fatal error: %v", err)
+		log.Fatal(err)
 	}
 
-	// 2. Open file
 	f, err := os.Open(inputHTML)
 	if err != nil {
-		log.Fatalf("Error opening HTML: %v", err)
+		log.Fatal(err)
 	}
 	defer f.Close()
 
-	// 3. Create Page
 	page := wkhtmltopdf.NewPageReader(f)
 
-	// --- CRITICAL SETTINGS TO FIX YOUR ERRORS ---
+	// --- FIXING THE ERRORS ---
 	
-	// Ignore missing images and network errors
+	// 1. Correct name for the "Intelligent Shrinking" setting
+	page.DisableSmartShrinking.Set(true) 
+	
+	// 2. Standard Viewport for A4 at 96 DPI
+	page.ViewportSize.Set("794x1122")
+	
+	// 3. Essential for Marathi/Hindi characters
+	page.Encoding.Set("utf-8")
+	
+	// 4. Ignore the missing icon/signature errors
 	page.LoadErrorHandling.Set("ignore")
-	page.LoadMediaErrorHandling.Set("ignore")
-	
-	// Disable local file access if you don't have the /assets/ folder on your C: drive
-	// This prevents the "system cannot find the path specified" error
-	page.EnableLocalFileAccess.Set(false) 
-
-	// Give it enough time to handle the large 1.9MB file
-	page.JavascriptDelay.Set(200)
-	// --------------------------------------------
+	page.DisableJavascript.Set(true)
 
 	pdfg.AddPage(page)
 
-	// Global settings
+	// --- GLOBAL A4 CALIBRATION ---
+	
 	pdfg.PageSize.Set(wkhtmltopdf.PageSizeA4)
-	pdfg.Dpi.Set(300)
+	
+	// IMPORTANT: Set DPI to 96. 
+	// At 300 DPI, your 210mm width is interpreted differently.
+	// 96 DPI ensures 1 pixel in CSS = 1/96 inch (Standard Web).
+	pdfg.Dpi.Set(96) 
+
+	// Remove all engine margins
 	pdfg.MarginLeft.Set(0)
 	pdfg.MarginRight.Set(0)
 	pdfg.MarginTop.Set(0)
 	pdfg.MarginBottom.Set(0)
 
-	fmt.Printf("⏳ Converting %s (1.9MB) to PDF...\n", inputHTML)
+	fmt.Printf("⏳ Generating exact A4 PDF...")
 	start := time.Now()
-
-	// 4. Create the PDF
 	err = pdfg.Create()
-	
-	// If it still returns an error, check if it actually managed to generate bytes.
-	// Sometimes wkhtmltopdf returns an error code even if the PDF was produced.
-	if err != nil {
-		fmt.Printf("⚠️ Note: wkhtmltopdf reported warnings: %v\n", err)
-		if len(pdfg.Bytes()) == 0 {
-			log.Fatal("❌ Failed to generate any PDF content.")
-		}
+
+	if err != nil && len(pdfg.Bytes()) == 0 {
+		log.Fatalf("❌ Failed: %v", err)
 	}
 
-	// 5. Save to file
 	err = pdfg.WriteFile(outputPDF)
-	if err != nil {
-		log.Fatalf("Error saving file: %v", err)
-	}
-
-	fmt.Printf("✅ Done! File saved as %s in %v\n", outputPDF, time.Since(start))
+	fmt.Printf("✅ Done in %v\n", time.Since(start))
 }

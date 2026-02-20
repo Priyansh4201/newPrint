@@ -49888,7 +49888,12 @@
       .ctrl-btn:hover {
         background: #eee;
       }
-
+      body {
+        display: block;
+        background: white;
+        padding: 0;
+        margin: 0;
+      }
       @media print {
         body {
           display: block;
@@ -49903,6 +49908,12 @@
           box-shadow: none;
         }
       }
+      .sheet-outer A4 {
+        display: block;
+        background: black;
+        padding: 0;
+        margin: 0;
+      }
     </style>
   </head>
   <body>
@@ -49913,17 +49924,13 @@
     >
       <div
         style="
-          height: 1122px;
           width: 210mm;
-          background-color: rgb(255, 255, 255);
-          border: 1px solid black;
-          margin-bottom: 15px;
+          min-height: 297mm;
+          background-color: white;
           position: relative;
           overflow: hidden;
           box-sizing: border-box;
-          padding: 10px 10px 60px 60px;
-          white-space: normal;
-          overflow-wrap: break-word;
+          page-break-after: always;
         "
       >
         <div
@@ -49977,7 +49984,7 @@
                     letter-spacing: 0%;
                   "
                 >
-                  Brihanmumbai Municipal Corporation | बृहन्मुंबई महानगरपालिका
+                  Brihanmumbai Municipal Corporation | limited language
                 </h2>
                 <hr
                   _ngcontent-ng-c3187931997=""
@@ -50070,406 +50077,156 @@
             >
           </div>
         </div>
-        <div style="width: 100%; overflow: hidden; display: block">
-          <div
-            _ngcontent-ng-c3187931997=""
-            id="patient-info-section-id"
-            class="patient-info-section"
-            style="background: #cccccc; padding: 6px 8px 2px 8px"
+        <div
+          style="
+            background-color: #cccccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+          "
+        >
+          <!-- 1. Name and Date Bar -->
+          <table
+            style="width: 100%; border-collapse: collapse; margin-bottom: 8px"
           >
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-header"
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="patient-name-container"
-                style="display: flex; align-items: center; gap: 10px"
-              >
-                <div _ngcontent-ng-c3187931997="">
-                  <div _ngcontent-ng-c3187931997="">
-                    <svg
-                      _ngcontent-ng-c3187931997=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      style="vertical-align: middle"
-                    >
-                      <path
-                        _ngcontent-ng-c3187931997=""
-                        d="M11.4542 11.265C11.483 11.4966 11.2989 11.7 11.0655 11.7H0.934653C0.701493 11.7 0.517533 11.4969 0.545853 11.2656L0.546453 11.261C0.574773 11.0324 0.644493 10.8151 0.737253 10.6049C0.846933 10.3559 1.04697 10.1897 1.26477 10.0424C1.66137 9.77409 2.10165 9.59241 2.54061 9.40905C2.85645 9.27729 3.17421 9.14985 3.48897 9.01581C4.38129 8.61417 4.50021 8.30685 4.51377 8.25861C4.5203 8.23019 4.52495 8.20137 4.52769 8.17233C4.53405 8.10549 4.53909 8.03853 4.54353 7.97145V7.79757C3.35025 7.80814 2.67777 7.49577 2.33841 7.25601C2.20281 7.16025 2.21025 6.96225 2.34501 6.86529C2.66613 6.63465 3.12537 5.97117 3.08061 4.06221C3.01245 1.15329 4.35333 0.672934 4.85325 0.482614C6.30885 -0.070466 7.04049 0.809494 7.04049 0.809494C8.72781 0.653494 9.19353 2.49669 8.98617 4.59609C8.84553 6.02073 9.33141 6.62901 9.65817 6.87285C9.79041 6.97149 9.77529 7.17177 9.63753 7.26237C8.78769 7.82085 7.46949 7.78041 7.46949 7.78041V8.13717C7.47057 8.14869 7.47141 8.16045 7.47261 8.17209C7.47537 8.20137 7.48005 8.23017 7.48641 8.25837C7.50009 8.30673 7.61889 8.61405 8.51121 9.01557C8.82609 9.14961 9.14385 9.27717 9.45957 9.40881C9.89877 9.59205 10.3388 9.77373 10.7354 10.0421C10.9532 10.1895 11.1534 10.3556 11.2631 10.6046C11.3557 10.8146 11.4255 11.0322 11.4539 11.2608L11.4543 11.2651L11.4542 11.265Z"
-                        fill="black"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="patient-name"
-                  style="font-size: 13px; font-weight: 600; color: #000"
-                >
-                  Dr. Paresh G Gandhi
-                  <span
-                    _ngcontent-ng-c3187931997=""
-                    class="dob-age ng-star-inserted"
-                    style="
-                      font-size: 12px;
-                      font-weight: 400;
-                      color: #000;
-                      margin-left: 6px;
-                    "
-                  >
-                    (Male/50y 6m<!----><!---->)
-                    <!----><!----></span
-                  ><!----><!---->
-                </div>
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="datetime-container"
-                style="display: flex; align-items: center"
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="datetime-wrapper"
-                  style="border-radius: 6px; padding: 4px 10px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="datetime-text"
-                    style="font-size: 13px; color: #000; font-weight: 600"
-                  >
-                    23-Jan-2026 | 13:29
-                    <!----><!---->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-details"
-              style="
-                display: flex;
-                gap: 32px;
-                margin-top: 4px;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
+            <tr>
+              <td
                 style="
-                  width: 45%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
                 "
               >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
+                <img
+                  src="data:image/png;base64,..."
+                  style="
+                    width: 12px;
+                    height: 12px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                  "
+                />
+                Dr. Paresh G Gandhi
+                <span style="font-weight: normal; font-size: 12px"
+                  >(Male/50y 6m)</span
                 >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+              </td>
+              <td
+                style="
+                  text-align: right;
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
+                "
+              >
+                23-Jan-2026 | 13:29
+              </td>
+            </tr>
+          </table>
+
+          <!-- 2. Two-Column Detail Table -->
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              table-layout: fixed;
+              font-family: Arial, sans-serif;
+              font-size: 11px;
+              color: black;
+            "
+          >
+            <tr>
+              <!-- Left Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-right: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >UHID:</span
                   >
-                    UHID
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      15080600028940
-                    </div>
-                  </div>
+                  <strong>15080600028940</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >IPD No.:</span
                   >
-                    IPD No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      2605160200090
-                    </div>
-                  </div>
+                  <strong>2605160200090</strong>
                 </div>
-                <!----><!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row-vertical"
-                  style="margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="color: #000"
+                <div style="margin-bottom: 3px; line-height: 1.2">
+                  <span
+                    style="
+                      display: inline-block;
+                      width: 65px;
+                      color: #555;
+                      vertical-align: top;
+                    "
+                    >Address:</span
                   >
-                    Address
-                  </div>
                   <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-full"
-                    style="font-weight: 600; color: #000"
+                    style="
+                      display: inline-block;
+                      width: calc(100% - 70px);
+                      font-weight: bold;
+                    "
                   >
                     I.O.C Road, Shantikunj Society, Chandkheda, Ahmedabad
                   </div>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row hidden"
-                  style="display: flex; align-items: center; margin-bottom: 5px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-top: 3px">
+                  <span style="display: inline-block; width: 85px; color: #555"
+                    >MLC Ref No.:</span
                   >
-                    Diagnosis
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Abnormal prostate (Prostate Cancer), Accidental Exposure
-                      to Other Specified Factors, Dengue fever, Oral cancer
-                      (Mouth cancer)
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
+              </td>
+
+              <!-- Right Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-left: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Consultant:</span
                   >
-                    MLC Ref No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
+                  <strong>Dr. Harshika Chandvani</strong>
                 </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
-                style="
-                  flex: 1;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-                "
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Ref. By:</span
                   >
-                    Consultant
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Harshika Chandvani
-                    </div>
-                  </div>
+                  <strong>Dr. Paresh Kanzariya</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Payer Class:</span
                   >
-                    Ref. By
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Paresh Kanzariya
-                    </div>
-                  </div>
+                  <strong>General-self</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >CR No.:</span
                   >
-                    Payer Class
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      General-self
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
-                  >
-                    CR No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
-                </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="mlc-case-tag ng-star-inserted"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 6px;
-                  background: #000;
-                  color: #fff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  padding: 6px 12px;
-                  border-radius: 8px;
-                  white-space: nowrap;
-                  flex-shrink: 0;
-                "
-              >
-                <svg
-                  _ngcontent-ng-c3187931997=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    _ngcontent-ng-c3187931997=""
-                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                  ></path>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="9"
-                    x2="12"
-                    y2="13"
-                  ></line>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="17"
-                    x2="12.01"
-                    y2="17"
-                  ></line></svg
-                ><span _ngcontent-ng-c3187931997="">MLC Case</span>
-              </div>
-              <!---->
-            </div>
-          </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 3. MLC Black Bar -->
+        <div
+          style="
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+          "
+        >
+          ⚠ MLC Case
         </div>
         <div
           class="inner-content-box"
@@ -52137,17 +51894,13 @@
       </div>
       <div
         style="
-          height: 1122px;
           width: 210mm;
-          background-color: rgb(255, 255, 255);
-          border: 1px solid black;
-          margin-bottom: 15px;
+          min-height: 297mm;
+          background-color: white;
           position: relative;
           overflow: hidden;
           box-sizing: border-box;
-          padding: 10px 10px 60px 60px;
-          white-space: normal;
-          overflow-wrap: break-word;
+          page-break-after: always;
         "
       >
         <div
@@ -52201,7 +51954,7 @@
                     letter-spacing: 0%;
                   "
                 >
-                  Brihanmumbai Municipal Corporation | बृहन्मुंबई महानगरपालिका
+                  Brihanmumbai Municipal Corporation | limited language
                 </h2>
                 <hr
                   _ngcontent-ng-c3187931997=""
@@ -52294,406 +52047,156 @@
             >
           </div>
         </div>
-        <div style="width: 100%; overflow: hidden; display: block">
-          <div
-            _ngcontent-ng-c3187931997=""
-            id="patient-info-section-id"
-            class="patient-info-section"
-            style="background: #cccccc; padding: 6px 8px 2px 8px"
+        <div
+          style="
+            background-color: #cccccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+          "
+        >
+          <!-- 1. Name and Date Bar -->
+          <table
+            style="width: 100%; border-collapse: collapse; margin-bottom: 8px"
           >
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-header"
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="patient-name-container"
-                style="display: flex; align-items: center; gap: 10px"
-              >
-                <div _ngcontent-ng-c3187931997="">
-                  <div _ngcontent-ng-c3187931997="">
-                    <svg
-                      _ngcontent-ng-c3187931997=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      style="vertical-align: middle"
-                    >
-                      <path
-                        _ngcontent-ng-c3187931997=""
-                        d="M11.4542 11.265C11.483 11.4966 11.2989 11.7 11.0655 11.7H0.934653C0.701493 11.7 0.517533 11.4969 0.545853 11.2656L0.546453 11.261C0.574773 11.0324 0.644493 10.8151 0.737253 10.6049C0.846933 10.3559 1.04697 10.1897 1.26477 10.0424C1.66137 9.77409 2.10165 9.59241 2.54061 9.40905C2.85645 9.27729 3.17421 9.14985 3.48897 9.01581C4.38129 8.61417 4.50021 8.30685 4.51377 8.25861C4.5203 8.23019 4.52495 8.20137 4.52769 8.17233C4.53405 8.10549 4.53909 8.03853 4.54353 7.97145V7.79757C3.35025 7.80814 2.67777 7.49577 2.33841 7.25601C2.20281 7.16025 2.21025 6.96225 2.34501 6.86529C2.66613 6.63465 3.12537 5.97117 3.08061 4.06221C3.01245 1.15329 4.35333 0.672934 4.85325 0.482614C6.30885 -0.070466 7.04049 0.809494 7.04049 0.809494C8.72781 0.653494 9.19353 2.49669 8.98617 4.59609C8.84553 6.02073 9.33141 6.62901 9.65817 6.87285C9.79041 6.97149 9.77529 7.17177 9.63753 7.26237C8.78769 7.82085 7.46949 7.78041 7.46949 7.78041V8.13717C7.47057 8.14869 7.47141 8.16045 7.47261 8.17209C7.47537 8.20137 7.48005 8.23017 7.48641 8.25837C7.50009 8.30673 7.61889 8.61405 8.51121 9.01557C8.82609 9.14961 9.14385 9.27717 9.45957 9.40881C9.89877 9.59205 10.3388 9.77373 10.7354 10.0421C10.9532 10.1895 11.1534 10.3556 11.2631 10.6046C11.3557 10.8146 11.4255 11.0322 11.4539 11.2608L11.4543 11.2651L11.4542 11.265Z"
-                        fill="black"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="patient-name"
-                  style="font-size: 13px; font-weight: 600; color: #000"
-                >
-                  Dr. Paresh G Gandhi
-                  <span
-                    _ngcontent-ng-c3187931997=""
-                    class="dob-age ng-star-inserted"
-                    style="
-                      font-size: 12px;
-                      font-weight: 400;
-                      color: #000;
-                      margin-left: 6px;
-                    "
-                  >
-                    (Male/50y 6m<!----><!---->)
-                    <!----><!----></span
-                  ><!----><!---->
-                </div>
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="datetime-container"
-                style="display: flex; align-items: center"
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="datetime-wrapper"
-                  style="border-radius: 6px; padding: 4px 10px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="datetime-text"
-                    style="font-size: 13px; color: #000; font-weight: 600"
-                  >
-                    23-Jan-2026 | 13:29
-                    <!----><!---->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-details"
-              style="
-                display: flex;
-                gap: 32px;
-                margin-top: 4px;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
+            <tr>
+              <td
                 style="
-                  width: 45%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
                 "
               >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
+                <img
+                  src="data:image/png;base64,..."
+                  style="
+                    width: 12px;
+                    height: 12px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                  "
+                />
+                Dr. Paresh G Gandhi
+                <span style="font-weight: normal; font-size: 12px"
+                  >(Male/50y 6m)</span
                 >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+              </td>
+              <td
+                style="
+                  text-align: right;
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
+                "
+              >
+                23-Jan-2026 | 13:29
+              </td>
+            </tr>
+          </table>
+
+          <!-- 2. Two-Column Detail Table -->
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              table-layout: fixed;
+              font-family: Arial, sans-serif;
+              font-size: 11px;
+              color: black;
+            "
+          >
+            <tr>
+              <!-- Left Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-right: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >UHID:</span
                   >
-                    UHID
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      15080600028940
-                    </div>
-                  </div>
+                  <strong>15080600028940</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >IPD No.:</span
                   >
-                    IPD No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      2605160200090
-                    </div>
-                  </div>
+                  <strong>2605160200090</strong>
                 </div>
-                <!----><!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row-vertical"
-                  style="margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="color: #000"
+                <div style="margin-bottom: 3px; line-height: 1.2">
+                  <span
+                    style="
+                      display: inline-block;
+                      width: 65px;
+                      color: #555;
+                      vertical-align: top;
+                    "
+                    >Address:</span
                   >
-                    Address
-                  </div>
                   <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-full"
-                    style="font-weight: 600; color: #000"
+                    style="
+                      display: inline-block;
+                      width: calc(100% - 70px);
+                      font-weight: bold;
+                    "
                   >
                     I.O.C Road, Shantikunj Society, Chandkheda, Ahmedabad
                   </div>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row hidden"
-                  style="display: flex; align-items: center; margin-bottom: 5px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-top: 3px">
+                  <span style="display: inline-block; width: 85px; color: #555"
+                    >MLC Ref No.:</span
                   >
-                    Diagnosis
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Abnormal prostate (Prostate Cancer), Accidental Exposure
-                      to Other Specified Factors, Dengue fever, Oral cancer
-                      (Mouth cancer)
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
+              </td>
+
+              <!-- Right Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-left: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Consultant:</span
                   >
-                    MLC Ref No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
+                  <strong>Dr. Harshika Chandvani</strong>
                 </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
-                style="
-                  flex: 1;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-                "
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Ref. By:</span
                   >
-                    Consultant
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Harshika Chandvani
-                    </div>
-                  </div>
+                  <strong>Dr. Paresh Kanzariya</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Payer Class:</span
                   >
-                    Ref. By
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Paresh Kanzariya
-                    </div>
-                  </div>
+                  <strong>General-self</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >CR No.:</span
                   >
-                    Payer Class
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      General-self
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
-                  >
-                    CR No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
-                </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="mlc-case-tag ng-star-inserted"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 6px;
-                  background: #000;
-                  color: #fff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  padding: 6px 12px;
-                  border-radius: 8px;
-                  white-space: nowrap;
-                  flex-shrink: 0;
-                "
-              >
-                <svg
-                  _ngcontent-ng-c3187931997=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    _ngcontent-ng-c3187931997=""
-                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                  ></path>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="9"
-                    x2="12"
-                    y2="13"
-                  ></line>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="17"
-                    x2="12.01"
-                    y2="17"
-                  ></line></svg
-                ><span _ngcontent-ng-c3187931997="">MLC Case</span>
-              </div>
-              <!---->
-            </div>
-          </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 3. MLC Black Bar -->
+        <div
+          style="
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+          "
+        >
+          ⚠ MLC Case
         </div>
         <div
           class="inner-content-box"
@@ -54422,17 +53925,13 @@
       </div>
       <div
         style="
-          height: 1122px;
           width: 210mm;
-          background-color: rgb(255, 255, 255);
-          border: 1px solid black;
-          margin-bottom: 15px;
+          min-height: 297mm;
+          background-color: white;
           position: relative;
           overflow: hidden;
           box-sizing: border-box;
-          padding: 10px 10px 60px 60px;
-          white-space: normal;
-          overflow-wrap: break-word;
+          page-break-after: always;
         "
       >
         <div
@@ -54486,7 +53985,7 @@
                     letter-spacing: 0%;
                   "
                 >
-                  Brihanmumbai Municipal Corporation | बृहन्मुंबई महानगरपालिका
+                  Brihanmumbai Municipal Corporation | limited language
                 </h2>
                 <hr
                   _ngcontent-ng-c3187931997=""
@@ -54579,406 +54078,156 @@
             >
           </div>
         </div>
-        <div style="width: 100%; overflow: hidden; display: block">
-          <div
-            _ngcontent-ng-c3187931997=""
-            id="patient-info-section-id"
-            class="patient-info-section"
-            style="background: #cccccc; padding: 6px 8px 2px 8px"
+        <div
+          style="
+            background-color: #cccccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+          "
+        >
+          <!-- 1. Name and Date Bar -->
+          <table
+            style="width: 100%; border-collapse: collapse; margin-bottom: 8px"
           >
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-header"
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="patient-name-container"
-                style="display: flex; align-items: center; gap: 10px"
-              >
-                <div _ngcontent-ng-c3187931997="">
-                  <div _ngcontent-ng-c3187931997="">
-                    <svg
-                      _ngcontent-ng-c3187931997=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      style="vertical-align: middle"
-                    >
-                      <path
-                        _ngcontent-ng-c3187931997=""
-                        d="M11.4542 11.265C11.483 11.4966 11.2989 11.7 11.0655 11.7H0.934653C0.701493 11.7 0.517533 11.4969 0.545853 11.2656L0.546453 11.261C0.574773 11.0324 0.644493 10.8151 0.737253 10.6049C0.846933 10.3559 1.04697 10.1897 1.26477 10.0424C1.66137 9.77409 2.10165 9.59241 2.54061 9.40905C2.85645 9.27729 3.17421 9.14985 3.48897 9.01581C4.38129 8.61417 4.50021 8.30685 4.51377 8.25861C4.5203 8.23019 4.52495 8.20137 4.52769 8.17233C4.53405 8.10549 4.53909 8.03853 4.54353 7.97145V7.79757C3.35025 7.80814 2.67777 7.49577 2.33841 7.25601C2.20281 7.16025 2.21025 6.96225 2.34501 6.86529C2.66613 6.63465 3.12537 5.97117 3.08061 4.06221C3.01245 1.15329 4.35333 0.672934 4.85325 0.482614C6.30885 -0.070466 7.04049 0.809494 7.04049 0.809494C8.72781 0.653494 9.19353 2.49669 8.98617 4.59609C8.84553 6.02073 9.33141 6.62901 9.65817 6.87285C9.79041 6.97149 9.77529 7.17177 9.63753 7.26237C8.78769 7.82085 7.46949 7.78041 7.46949 7.78041V8.13717C7.47057 8.14869 7.47141 8.16045 7.47261 8.17209C7.47537 8.20137 7.48005 8.23017 7.48641 8.25837C7.50009 8.30673 7.61889 8.61405 8.51121 9.01557C8.82609 9.14961 9.14385 9.27717 9.45957 9.40881C9.89877 9.59205 10.3388 9.77373 10.7354 10.0421C10.9532 10.1895 11.1534 10.3556 11.2631 10.6046C11.3557 10.8146 11.4255 11.0322 11.4539 11.2608L11.4543 11.2651L11.4542 11.265Z"
-                        fill="black"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="patient-name"
-                  style="font-size: 13px; font-weight: 600; color: #000"
-                >
-                  Dr. Paresh G Gandhi
-                  <span
-                    _ngcontent-ng-c3187931997=""
-                    class="dob-age ng-star-inserted"
-                    style="
-                      font-size: 12px;
-                      font-weight: 400;
-                      color: #000;
-                      margin-left: 6px;
-                    "
-                  >
-                    (Male/50y 6m<!----><!---->)
-                    <!----><!----></span
-                  ><!----><!---->
-                </div>
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="datetime-container"
-                style="display: flex; align-items: center"
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="datetime-wrapper"
-                  style="border-radius: 6px; padding: 4px 10px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="datetime-text"
-                    style="font-size: 13px; color: #000; font-weight: 600"
-                  >
-                    23-Jan-2026 | 13:29
-                    <!----><!---->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-details"
-              style="
-                display: flex;
-                gap: 32px;
-                margin-top: 4px;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
+            <tr>
+              <td
                 style="
-                  width: 45%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
                 "
               >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
+                <img
+                  src="data:image/png;base64,..."
+                  style="
+                    width: 12px;
+                    height: 12px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                  "
+                />
+                Dr. Paresh G Gandhi
+                <span style="font-weight: normal; font-size: 12px"
+                  >(Male/50y 6m)</span
                 >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+              </td>
+              <td
+                style="
+                  text-align: right;
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
+                "
+              >
+                23-Jan-2026 | 13:29
+              </td>
+            </tr>
+          </table>
+
+          <!-- 2. Two-Column Detail Table -->
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              table-layout: fixed;
+              font-family: Arial, sans-serif;
+              font-size: 11px;
+              color: black;
+            "
+          >
+            <tr>
+              <!-- Left Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-right: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >UHID:</span
                   >
-                    UHID
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      15080600028940
-                    </div>
-                  </div>
+                  <strong>15080600028940</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >IPD No.:</span
                   >
-                    IPD No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      2605160200090
-                    </div>
-                  </div>
+                  <strong>2605160200090</strong>
                 </div>
-                <!----><!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row-vertical"
-                  style="margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="color: #000"
+                <div style="margin-bottom: 3px; line-height: 1.2">
+                  <span
+                    style="
+                      display: inline-block;
+                      width: 65px;
+                      color: #555;
+                      vertical-align: top;
+                    "
+                    >Address:</span
                   >
-                    Address
-                  </div>
                   <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-full"
-                    style="font-weight: 600; color: #000"
+                    style="
+                      display: inline-block;
+                      width: calc(100% - 70px);
+                      font-weight: bold;
+                    "
                   >
                     I.O.C Road, Shantikunj Society, Chandkheda, Ahmedabad
                   </div>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row hidden"
-                  style="display: flex; align-items: center; margin-bottom: 5px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-top: 3px">
+                  <span style="display: inline-block; width: 85px; color: #555"
+                    >MLC Ref No.:</span
                   >
-                    Diagnosis
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Abnormal prostate (Prostate Cancer), Accidental Exposure
-                      to Other Specified Factors, Dengue fever, Oral cancer
-                      (Mouth cancer)
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
+              </td>
+
+              <!-- Right Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-left: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Consultant:</span
                   >
-                    MLC Ref No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
+                  <strong>Dr. Harshika Chandvani</strong>
                 </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
-                style="
-                  flex: 1;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-                "
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Ref. By:</span
                   >
-                    Consultant
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Harshika Chandvani
-                    </div>
-                  </div>
+                  <strong>Dr. Paresh Kanzariya</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Payer Class:</span
                   >
-                    Ref. By
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Paresh Kanzariya
-                    </div>
-                  </div>
+                  <strong>General-self</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >CR No.:</span
                   >
-                    Payer Class
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      General-self
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
-                  >
-                    CR No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
-                </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="mlc-case-tag ng-star-inserted"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 6px;
-                  background: #000;
-                  color: #fff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  padding: 6px 12px;
-                  border-radius: 8px;
-                  white-space: nowrap;
-                  flex-shrink: 0;
-                "
-              >
-                <svg
-                  _ngcontent-ng-c3187931997=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    _ngcontent-ng-c3187931997=""
-                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                  ></path>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="9"
-                    x2="12"
-                    y2="13"
-                  ></line>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="17"
-                    x2="12.01"
-                    y2="17"
-                  ></line></svg
-                ><span _ngcontent-ng-c3187931997="">MLC Case</span>
-              </div>
-              <!---->
-            </div>
-          </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 3. MLC Black Bar -->
+        <div
+          style="
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+          "
+        >
+          ⚠ MLC Case
         </div>
         <div
           class="inner-content-box"
@@ -55512,17 +54761,13 @@
       </div>
       <div
         style="
-          height: 1122px;
           width: 210mm;
-          background-color: rgb(255, 255, 255);
-          border: 1px solid black;
-          margin-bottom: 15px;
+          min-height: 297mm;
+          background-color: white;
           position: relative;
           overflow: hidden;
           box-sizing: border-box;
-          padding: 10px 10px 60px 60px;
-          white-space: normal;
-          overflow-wrap: break-word;
+          page-break-after: always;
         "
       >
         <div
@@ -55576,7 +54821,7 @@
                     letter-spacing: 0%;
                   "
                 >
-                  Brihanmumbai Municipal Corporation | बृहन्मुंबई महानगरपालिका
+                  Brihanmumbai Municipal Corporation | limited language
                 </h2>
                 <hr
                   _ngcontent-ng-c3187931997=""
@@ -55669,406 +54914,156 @@
             >
           </div>
         </div>
-        <div style="width: 100%; overflow: hidden; display: block">
-          <div
-            _ngcontent-ng-c3187931997=""
-            id="patient-info-section-id"
-            class="patient-info-section"
-            style="background: #cccccc; padding: 6px 8px 2px 8px"
+        <div
+          style="
+            background-color: #cccccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+          "
+        >
+          <!-- 1. Name and Date Bar -->
+          <table
+            style="width: 100%; border-collapse: collapse; margin-bottom: 8px"
           >
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-header"
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="patient-name-container"
-                style="display: flex; align-items: center; gap: 10px"
-              >
-                <div _ngcontent-ng-c3187931997="">
-                  <div _ngcontent-ng-c3187931997="">
-                    <svg
-                      _ngcontent-ng-c3187931997=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      style="vertical-align: middle"
-                    >
-                      <path
-                        _ngcontent-ng-c3187931997=""
-                        d="M11.4542 11.265C11.483 11.4966 11.2989 11.7 11.0655 11.7H0.934653C0.701493 11.7 0.517533 11.4969 0.545853 11.2656L0.546453 11.261C0.574773 11.0324 0.644493 10.8151 0.737253 10.6049C0.846933 10.3559 1.04697 10.1897 1.26477 10.0424C1.66137 9.77409 2.10165 9.59241 2.54061 9.40905C2.85645 9.27729 3.17421 9.14985 3.48897 9.01581C4.38129 8.61417 4.50021 8.30685 4.51377 8.25861C4.5203 8.23019 4.52495 8.20137 4.52769 8.17233C4.53405 8.10549 4.53909 8.03853 4.54353 7.97145V7.79757C3.35025 7.80814 2.67777 7.49577 2.33841 7.25601C2.20281 7.16025 2.21025 6.96225 2.34501 6.86529C2.66613 6.63465 3.12537 5.97117 3.08061 4.06221C3.01245 1.15329 4.35333 0.672934 4.85325 0.482614C6.30885 -0.070466 7.04049 0.809494 7.04049 0.809494C8.72781 0.653494 9.19353 2.49669 8.98617 4.59609C8.84553 6.02073 9.33141 6.62901 9.65817 6.87285C9.79041 6.97149 9.77529 7.17177 9.63753 7.26237C8.78769 7.82085 7.46949 7.78041 7.46949 7.78041V8.13717C7.47057 8.14869 7.47141 8.16045 7.47261 8.17209C7.47537 8.20137 7.48005 8.23017 7.48641 8.25837C7.50009 8.30673 7.61889 8.61405 8.51121 9.01557C8.82609 9.14961 9.14385 9.27717 9.45957 9.40881C9.89877 9.59205 10.3388 9.77373 10.7354 10.0421C10.9532 10.1895 11.1534 10.3556 11.2631 10.6046C11.3557 10.8146 11.4255 11.0322 11.4539 11.2608L11.4543 11.2651L11.4542 11.265Z"
-                        fill="black"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="patient-name"
-                  style="font-size: 13px; font-weight: 600; color: #000"
-                >
-                  Dr. Paresh G Gandhi
-                  <span
-                    _ngcontent-ng-c3187931997=""
-                    class="dob-age ng-star-inserted"
-                    style="
-                      font-size: 12px;
-                      font-weight: 400;
-                      color: #000;
-                      margin-left: 6px;
-                    "
-                  >
-                    (Male/50y 6m<!----><!---->)
-                    <!----><!----></span
-                  ><!----><!---->
-                </div>
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="datetime-container"
-                style="display: flex; align-items: center"
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="datetime-wrapper"
-                  style="border-radius: 6px; padding: 4px 10px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="datetime-text"
-                    style="font-size: 13px; color: #000; font-weight: 600"
-                  >
-                    23-Jan-2026 | 13:29
-                    <!----><!---->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-details"
-              style="
-                display: flex;
-                gap: 32px;
-                margin-top: 4px;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
+            <tr>
+              <td
                 style="
-                  width: 45%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
                 "
               >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
+                <img
+                  src="data:image/png;base64,..."
+                  style="
+                    width: 12px;
+                    height: 12px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                  "
+                />
+                Dr. Paresh G Gandhi
+                <span style="font-weight: normal; font-size: 12px"
+                  >(Male/50y 6m)</span
                 >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+              </td>
+              <td
+                style="
+                  text-align: right;
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
+                "
+              >
+                23-Jan-2026 | 13:29
+              </td>
+            </tr>
+          </table>
+
+          <!-- 2. Two-Column Detail Table -->
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              table-layout: fixed;
+              font-family: Arial, sans-serif;
+              font-size: 11px;
+              color: black;
+            "
+          >
+            <tr>
+              <!-- Left Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-right: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >UHID:</span
                   >
-                    UHID
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      15080600028940
-                    </div>
-                  </div>
+                  <strong>15080600028940</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >IPD No.:</span
                   >
-                    IPD No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      2605160200090
-                    </div>
-                  </div>
+                  <strong>2605160200090</strong>
                 </div>
-                <!----><!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row-vertical"
-                  style="margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="color: #000"
+                <div style="margin-bottom: 3px; line-height: 1.2">
+                  <span
+                    style="
+                      display: inline-block;
+                      width: 65px;
+                      color: #555;
+                      vertical-align: top;
+                    "
+                    >Address:</span
                   >
-                    Address
-                  </div>
                   <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-full"
-                    style="font-weight: 600; color: #000"
+                    style="
+                      display: inline-block;
+                      width: calc(100% - 70px);
+                      font-weight: bold;
+                    "
                   >
                     I.O.C Road, Shantikunj Society, Chandkheda, Ahmedabad
                   </div>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row hidden"
-                  style="display: flex; align-items: center; margin-bottom: 5px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-top: 3px">
+                  <span style="display: inline-block; width: 85px; color: #555"
+                    >MLC Ref No.:</span
                   >
-                    Diagnosis
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Abnormal prostate (Prostate Cancer), Accidental Exposure
-                      to Other Specified Factors, Dengue fever, Oral cancer
-                      (Mouth cancer)
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
+              </td>
+
+              <!-- Right Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-left: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Consultant:</span
                   >
-                    MLC Ref No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
+                  <strong>Dr. Harshika Chandvani</strong>
                 </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
-                style="
-                  flex: 1;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-                "
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Ref. By:</span
                   >
-                    Consultant
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Harshika Chandvani
-                    </div>
-                  </div>
+                  <strong>Dr. Paresh Kanzariya</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Payer Class:</span
                   >
-                    Ref. By
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Paresh Kanzariya
-                    </div>
-                  </div>
+                  <strong>General-self</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >CR No.:</span
                   >
-                    Payer Class
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      General-self
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
-                  >
-                    CR No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
-                </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="mlc-case-tag ng-star-inserted"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 6px;
-                  background: #000;
-                  color: #fff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  padding: 6px 12px;
-                  border-radius: 8px;
-                  white-space: nowrap;
-                  flex-shrink: 0;
-                "
-              >
-                <svg
-                  _ngcontent-ng-c3187931997=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    _ngcontent-ng-c3187931997=""
-                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                  ></path>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="9"
-                    x2="12"
-                    y2="13"
-                  ></line>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="17"
-                    x2="12.01"
-                    y2="17"
-                  ></line></svg
-                ><span _ngcontent-ng-c3187931997="">MLC Case</span>
-              </div>
-              <!---->
-            </div>
-          </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 3. MLC Black Bar -->
+        <div
+          style="
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+          "
+        >
+          ⚠ MLC Case
         </div>
         <div
           class="inner-content-box"
@@ -57425,17 +56420,13 @@
       </div>
       <div
         style="
-          height: 1122px;
           width: 210mm;
-          background-color: rgb(255, 255, 255);
-          border: 1px solid black;
-          margin-bottom: 15px;
+          min-height: 297mm;
+          background-color: white;
           position: relative;
           overflow: hidden;
           box-sizing: border-box;
-          padding: 10px 10px 60px 60px;
-          white-space: normal;
-          overflow-wrap: break-word;
+          page-break-after: always;
         "
       >
         <div
@@ -57489,7 +56480,7 @@
                     letter-spacing: 0%;
                   "
                 >
-                  Brihanmumbai Municipal Corporation | बृहन्मुंबई महानगरपालिका
+                  Brihanmumbai Municipal Corporation | limited language
                 </h2>
                 <hr
                   _ngcontent-ng-c3187931997=""
@@ -57582,406 +56573,156 @@
             >
           </div>
         </div>
-        <div style="width: 100%; overflow: hidden; display: block">
-          <div
-            _ngcontent-ng-c3187931997=""
-            id="patient-info-section-id"
-            class="patient-info-section"
-            style="background: #cccccc; padding: 6px 8px 2px 8px"
+        <div
+          style="
+            background-color: #cccccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+          "
+        >
+          <!-- 1. Name and Date Bar -->
+          <table
+            style="width: 100%; border-collapse: collapse; margin-bottom: 8px"
           >
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-header"
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="patient-name-container"
-                style="display: flex; align-items: center; gap: 10px"
-              >
-                <div _ngcontent-ng-c3187931997="">
-                  <div _ngcontent-ng-c3187931997="">
-                    <svg
-                      _ngcontent-ng-c3187931997=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      style="vertical-align: middle"
-                    >
-                      <path
-                        _ngcontent-ng-c3187931997=""
-                        d="M11.4542 11.265C11.483 11.4966 11.2989 11.7 11.0655 11.7H0.934653C0.701493 11.7 0.517533 11.4969 0.545853 11.2656L0.546453 11.261C0.574773 11.0324 0.644493 10.8151 0.737253 10.6049C0.846933 10.3559 1.04697 10.1897 1.26477 10.0424C1.66137 9.77409 2.10165 9.59241 2.54061 9.40905C2.85645 9.27729 3.17421 9.14985 3.48897 9.01581C4.38129 8.61417 4.50021 8.30685 4.51377 8.25861C4.5203 8.23019 4.52495 8.20137 4.52769 8.17233C4.53405 8.10549 4.53909 8.03853 4.54353 7.97145V7.79757C3.35025 7.80814 2.67777 7.49577 2.33841 7.25601C2.20281 7.16025 2.21025 6.96225 2.34501 6.86529C2.66613 6.63465 3.12537 5.97117 3.08061 4.06221C3.01245 1.15329 4.35333 0.672934 4.85325 0.482614C6.30885 -0.070466 7.04049 0.809494 7.04049 0.809494C8.72781 0.653494 9.19353 2.49669 8.98617 4.59609C8.84553 6.02073 9.33141 6.62901 9.65817 6.87285C9.79041 6.97149 9.77529 7.17177 9.63753 7.26237C8.78769 7.82085 7.46949 7.78041 7.46949 7.78041V8.13717C7.47057 8.14869 7.47141 8.16045 7.47261 8.17209C7.47537 8.20137 7.48005 8.23017 7.48641 8.25837C7.50009 8.30673 7.61889 8.61405 8.51121 9.01557C8.82609 9.14961 9.14385 9.27717 9.45957 9.40881C9.89877 9.59205 10.3388 9.77373 10.7354 10.0421C10.9532 10.1895 11.1534 10.3556 11.2631 10.6046C11.3557 10.8146 11.4255 11.0322 11.4539 11.2608L11.4543 11.2651L11.4542 11.265Z"
-                        fill="black"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="patient-name"
-                  style="font-size: 13px; font-weight: 600; color: #000"
-                >
-                  Dr. Paresh G Gandhi
-                  <span
-                    _ngcontent-ng-c3187931997=""
-                    class="dob-age ng-star-inserted"
-                    style="
-                      font-size: 12px;
-                      font-weight: 400;
-                      color: #000;
-                      margin-left: 6px;
-                    "
-                  >
-                    (Male/50y 6m<!----><!---->)
-                    <!----><!----></span
-                  ><!----><!---->
-                </div>
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="datetime-container"
-                style="display: flex; align-items: center"
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="datetime-wrapper"
-                  style="border-radius: 6px; padding: 4px 10px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="datetime-text"
-                    style="font-size: 13px; color: #000; font-weight: 600"
-                  >
-                    23-Jan-2026 | 13:29
-                    <!----><!---->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-details"
-              style="
-                display: flex;
-                gap: 32px;
-                margin-top: 4px;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
+            <tr>
+              <td
                 style="
-                  width: 45%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
                 "
               >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
+                <img
+                  src="data:image/png;base64,..."
+                  style="
+                    width: 12px;
+                    height: 12px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                  "
+                />
+                Dr. Paresh G Gandhi
+                <span style="font-weight: normal; font-size: 12px"
+                  >(Male/50y 6m)</span
                 >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+              </td>
+              <td
+                style="
+                  text-align: right;
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
+                "
+              >
+                23-Jan-2026 | 13:29
+              </td>
+            </tr>
+          </table>
+
+          <!-- 2. Two-Column Detail Table -->
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              table-layout: fixed;
+              font-family: Arial, sans-serif;
+              font-size: 11px;
+              color: black;
+            "
+          >
+            <tr>
+              <!-- Left Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-right: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >UHID:</span
                   >
-                    UHID
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      15080600028940
-                    </div>
-                  </div>
+                  <strong>15080600028940</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >IPD No.:</span
                   >
-                    IPD No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      2605160200090
-                    </div>
-                  </div>
+                  <strong>2605160200090</strong>
                 </div>
-                <!----><!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row-vertical"
-                  style="margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="color: #000"
+                <div style="margin-bottom: 3px; line-height: 1.2">
+                  <span
+                    style="
+                      display: inline-block;
+                      width: 65px;
+                      color: #555;
+                      vertical-align: top;
+                    "
+                    >Address:</span
                   >
-                    Address
-                  </div>
                   <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-full"
-                    style="font-weight: 600; color: #000"
+                    style="
+                      display: inline-block;
+                      width: calc(100% - 70px);
+                      font-weight: bold;
+                    "
                   >
                     I.O.C Road, Shantikunj Society, Chandkheda, Ahmedabad
                   </div>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row hidden"
-                  style="display: flex; align-items: center; margin-bottom: 5px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-top: 3px">
+                  <span style="display: inline-block; width: 85px; color: #555"
+                    >MLC Ref No.:</span
                   >
-                    Diagnosis
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Abnormal prostate (Prostate Cancer), Accidental Exposure
-                      to Other Specified Factors, Dengue fever, Oral cancer
-                      (Mouth cancer)
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
+              </td>
+
+              <!-- Right Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-left: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Consultant:</span
                   >
-                    MLC Ref No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
+                  <strong>Dr. Harshika Chandvani</strong>
                 </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
-                style="
-                  flex: 1;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-                "
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Ref. By:</span
                   >
-                    Consultant
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Harshika Chandvani
-                    </div>
-                  </div>
+                  <strong>Dr. Paresh Kanzariya</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Payer Class:</span
                   >
-                    Ref. By
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Paresh Kanzariya
-                    </div>
-                  </div>
+                  <strong>General-self</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >CR No.:</span
                   >
-                    Payer Class
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      General-self
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
-                  >
-                    CR No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
-                </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="mlc-case-tag ng-star-inserted"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 6px;
-                  background: #000;
-                  color: #fff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  padding: 6px 12px;
-                  border-radius: 8px;
-                  white-space: nowrap;
-                  flex-shrink: 0;
-                "
-              >
-                <svg
-                  _ngcontent-ng-c3187931997=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    _ngcontent-ng-c3187931997=""
-                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                  ></path>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="9"
-                    x2="12"
-                    y2="13"
-                  ></line>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="17"
-                    x2="12.01"
-                    y2="17"
-                  ></line></svg
-                ><span _ngcontent-ng-c3187931997="">MLC Case</span>
-              </div>
-              <!---->
-            </div>
-          </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 3. MLC Black Bar -->
+        <div
+          style="
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+          "
+        >
+          ⚠ MLC Case
         </div>
         <div
           class="inner-content-box"
@@ -58454,17 +57195,13 @@
       </div>
       <div
         style="
-          height: 1122px;
           width: 210mm;
-          background-color: rgb(255, 255, 255);
-          border: 1px solid black;
-          margin-bottom: 15px;
+          min-height: 297mm;
+          background-color: white;
           position: relative;
           overflow: hidden;
           box-sizing: border-box;
-          padding: 10px 10px 60px 60px;
-          white-space: normal;
-          overflow-wrap: break-word;
+          page-break-after: always;
         "
       >
         <div
@@ -58518,7 +57255,7 @@
                     letter-spacing: 0%;
                   "
                 >
-                  Brihanmumbai Municipal Corporation | बृहन्मुंबई महानगरपालिका
+                  Brihanmumbai Municipal Corporation | limited language
                 </h2>
                 <hr
                   _ngcontent-ng-c3187931997=""
@@ -58611,406 +57348,156 @@
             >
           </div>
         </div>
-        <div style="width: 100%; overflow: hidden; display: block">
-          <div
-            _ngcontent-ng-c3187931997=""
-            id="patient-info-section-id"
-            class="patient-info-section"
-            style="background: #cccccc; padding: 6px 8px 2px 8px"
+        <div
+          style="
+            background-color: #cccccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+          "
+        >
+          <!-- 1. Name and Date Bar -->
+          <table
+            style="width: 100%; border-collapse: collapse; margin-bottom: 8px"
           >
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-header"
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="patient-name-container"
-                style="display: flex; align-items: center; gap: 10px"
-              >
-                <div _ngcontent-ng-c3187931997="">
-                  <div _ngcontent-ng-c3187931997="">
-                    <svg
-                      _ngcontent-ng-c3187931997=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      style="vertical-align: middle"
-                    >
-                      <path
-                        _ngcontent-ng-c3187931997=""
-                        d="M11.4542 11.265C11.483 11.4966 11.2989 11.7 11.0655 11.7H0.934653C0.701493 11.7 0.517533 11.4969 0.545853 11.2656L0.546453 11.261C0.574773 11.0324 0.644493 10.8151 0.737253 10.6049C0.846933 10.3559 1.04697 10.1897 1.26477 10.0424C1.66137 9.77409 2.10165 9.59241 2.54061 9.40905C2.85645 9.27729 3.17421 9.14985 3.48897 9.01581C4.38129 8.61417 4.50021 8.30685 4.51377 8.25861C4.5203 8.23019 4.52495 8.20137 4.52769 8.17233C4.53405 8.10549 4.53909 8.03853 4.54353 7.97145V7.79757C3.35025 7.80814 2.67777 7.49577 2.33841 7.25601C2.20281 7.16025 2.21025 6.96225 2.34501 6.86529C2.66613 6.63465 3.12537 5.97117 3.08061 4.06221C3.01245 1.15329 4.35333 0.672934 4.85325 0.482614C6.30885 -0.070466 7.04049 0.809494 7.04049 0.809494C8.72781 0.653494 9.19353 2.49669 8.98617 4.59609C8.84553 6.02073 9.33141 6.62901 9.65817 6.87285C9.79041 6.97149 9.77529 7.17177 9.63753 7.26237C8.78769 7.82085 7.46949 7.78041 7.46949 7.78041V8.13717C7.47057 8.14869 7.47141 8.16045 7.47261 8.17209C7.47537 8.20137 7.48005 8.23017 7.48641 8.25837C7.50009 8.30673 7.61889 8.61405 8.51121 9.01557C8.82609 9.14961 9.14385 9.27717 9.45957 9.40881C9.89877 9.59205 10.3388 9.77373 10.7354 10.0421C10.9532 10.1895 11.1534 10.3556 11.2631 10.6046C11.3557 10.8146 11.4255 11.0322 11.4539 11.2608L11.4543 11.2651L11.4542 11.265Z"
-                        fill="black"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="patient-name"
-                  style="font-size: 13px; font-weight: 600; color: #000"
-                >
-                  Dr. Paresh G Gandhi
-                  <span
-                    _ngcontent-ng-c3187931997=""
-                    class="dob-age ng-star-inserted"
-                    style="
-                      font-size: 12px;
-                      font-weight: 400;
-                      color: #000;
-                      margin-left: 6px;
-                    "
-                  >
-                    (Male/50y 6m<!----><!---->)
-                    <!----><!----></span
-                  ><!----><!---->
-                </div>
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="datetime-container"
-                style="display: flex; align-items: center"
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="datetime-wrapper"
-                  style="border-radius: 6px; padding: 4px 10px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="datetime-text"
-                    style="font-size: 13px; color: #000; font-weight: 600"
-                  >
-                    23-Jan-2026 | 13:29
-                    <!----><!---->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-details"
-              style="
-                display: flex;
-                gap: 32px;
-                margin-top: 4px;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
+            <tr>
+              <td
                 style="
-                  width: 45%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
                 "
               >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
+                <img
+                  src="data:image/png;base64,..."
+                  style="
+                    width: 12px;
+                    height: 12px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                  "
+                />
+                Dr. Paresh G Gandhi
+                <span style="font-weight: normal; font-size: 12px"
+                  >(Male/50y 6m)</span
                 >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+              </td>
+              <td
+                style="
+                  text-align: right;
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
+                "
+              >
+                23-Jan-2026 | 13:29
+              </td>
+            </tr>
+          </table>
+
+          <!-- 2. Two-Column Detail Table -->
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              table-layout: fixed;
+              font-family: Arial, sans-serif;
+              font-size: 11px;
+              color: black;
+            "
+          >
+            <tr>
+              <!-- Left Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-right: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >UHID:</span
                   >
-                    UHID
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      15080600028940
-                    </div>
-                  </div>
+                  <strong>15080600028940</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >IPD No.:</span
                   >
-                    IPD No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      2605160200090
-                    </div>
-                  </div>
+                  <strong>2605160200090</strong>
                 </div>
-                <!----><!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row-vertical"
-                  style="margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="color: #000"
+                <div style="margin-bottom: 3px; line-height: 1.2">
+                  <span
+                    style="
+                      display: inline-block;
+                      width: 65px;
+                      color: #555;
+                      vertical-align: top;
+                    "
+                    >Address:</span
                   >
-                    Address
-                  </div>
                   <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-full"
-                    style="font-weight: 600; color: #000"
+                    style="
+                      display: inline-block;
+                      width: calc(100% - 70px);
+                      font-weight: bold;
+                    "
                   >
                     I.O.C Road, Shantikunj Society, Chandkheda, Ahmedabad
                   </div>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row hidden"
-                  style="display: flex; align-items: center; margin-bottom: 5px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-top: 3px">
+                  <span style="display: inline-block; width: 85px; color: #555"
+                    >MLC Ref No.:</span
                   >
-                    Diagnosis
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Abnormal prostate (Prostate Cancer), Accidental Exposure
-                      to Other Specified Factors, Dengue fever, Oral cancer
-                      (Mouth cancer)
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
+              </td>
+
+              <!-- Right Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-left: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Consultant:</span
                   >
-                    MLC Ref No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
+                  <strong>Dr. Harshika Chandvani</strong>
                 </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
-                style="
-                  flex: 1;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-                "
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Ref. By:</span
                   >
-                    Consultant
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Harshika Chandvani
-                    </div>
-                  </div>
+                  <strong>Dr. Paresh Kanzariya</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Payer Class:</span
                   >
-                    Ref. By
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Paresh Kanzariya
-                    </div>
-                  </div>
+                  <strong>General-self</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >CR No.:</span
                   >
-                    Payer Class
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      General-self
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
-                  >
-                    CR No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
-                </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="mlc-case-tag ng-star-inserted"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 6px;
-                  background: #000;
-                  color: #fff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  padding: 6px 12px;
-                  border-radius: 8px;
-                  white-space: nowrap;
-                  flex-shrink: 0;
-                "
-              >
-                <svg
-                  _ngcontent-ng-c3187931997=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    _ngcontent-ng-c3187931997=""
-                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                  ></path>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="9"
-                    x2="12"
-                    y2="13"
-                  ></line>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="17"
-                    x2="12.01"
-                    y2="17"
-                  ></line></svg
-                ><span _ngcontent-ng-c3187931997="">MLC Case</span>
-              </div>
-              <!---->
-            </div>
-          </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 3. MLC Black Bar -->
+        <div
+          style="
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+          "
+        >
+          ⚠ MLC Case
         </div>
         <div
           class="inner-content-box"
@@ -59686,17 +58173,13 @@
       </div>
       <div
         style="
-          height: 1122px;
           width: 210mm;
-          background-color: rgb(255, 255, 255);
-          border: 1px solid black;
-          margin-bottom: 15px;
+          min-height: 297mm;
+          background-color: white;
           position: relative;
           overflow: hidden;
           box-sizing: border-box;
-          padding: 10px 10px 60px 60px;
-          white-space: normal;
-          overflow-wrap: break-word;
+          page-break-after: always;
         "
       >
         <div
@@ -59750,7 +58233,7 @@
                     letter-spacing: 0%;
                   "
                 >
-                  Brihanmumbai Municipal Corporation | बृहन्मुंबई महानगरपालिका
+                  Brihanmumbai Municipal Corporation | limited language
                 </h2>
                 <hr
                   _ngcontent-ng-c3187931997=""
@@ -59843,406 +58326,156 @@
             >
           </div>
         </div>
-        <div style="width: 100%; overflow: hidden; display: block">
-          <div
-            _ngcontent-ng-c3187931997=""
-            id="patient-info-section-id"
-            class="patient-info-section"
-            style="background: #cccccc; padding: 6px 8px 2px 8px"
+        <div
+          style="
+            background-color: #cccccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+          "
+        >
+          <!-- 1. Name and Date Bar -->
+          <table
+            style="width: 100%; border-collapse: collapse; margin-bottom: 8px"
           >
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-header"
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="patient-name-container"
-                style="display: flex; align-items: center; gap: 10px"
-              >
-                <div _ngcontent-ng-c3187931997="">
-                  <div _ngcontent-ng-c3187931997="">
-                    <svg
-                      _ngcontent-ng-c3187931997=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      style="vertical-align: middle"
-                    >
-                      <path
-                        _ngcontent-ng-c3187931997=""
-                        d="M11.4542 11.265C11.483 11.4966 11.2989 11.7 11.0655 11.7H0.934653C0.701493 11.7 0.517533 11.4969 0.545853 11.2656L0.546453 11.261C0.574773 11.0324 0.644493 10.8151 0.737253 10.6049C0.846933 10.3559 1.04697 10.1897 1.26477 10.0424C1.66137 9.77409 2.10165 9.59241 2.54061 9.40905C2.85645 9.27729 3.17421 9.14985 3.48897 9.01581C4.38129 8.61417 4.50021 8.30685 4.51377 8.25861C4.5203 8.23019 4.52495 8.20137 4.52769 8.17233C4.53405 8.10549 4.53909 8.03853 4.54353 7.97145V7.79757C3.35025 7.80814 2.67777 7.49577 2.33841 7.25601C2.20281 7.16025 2.21025 6.96225 2.34501 6.86529C2.66613 6.63465 3.12537 5.97117 3.08061 4.06221C3.01245 1.15329 4.35333 0.672934 4.85325 0.482614C6.30885 -0.070466 7.04049 0.809494 7.04049 0.809494C8.72781 0.653494 9.19353 2.49669 8.98617 4.59609C8.84553 6.02073 9.33141 6.62901 9.65817 6.87285C9.79041 6.97149 9.77529 7.17177 9.63753 7.26237C8.78769 7.82085 7.46949 7.78041 7.46949 7.78041V8.13717C7.47057 8.14869 7.47141 8.16045 7.47261 8.17209C7.47537 8.20137 7.48005 8.23017 7.48641 8.25837C7.50009 8.30673 7.61889 8.61405 8.51121 9.01557C8.82609 9.14961 9.14385 9.27717 9.45957 9.40881C9.89877 9.59205 10.3388 9.77373 10.7354 10.0421C10.9532 10.1895 11.1534 10.3556 11.2631 10.6046C11.3557 10.8146 11.4255 11.0322 11.4539 11.2608L11.4543 11.2651L11.4542 11.265Z"
-                        fill="black"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="patient-name"
-                  style="font-size: 13px; font-weight: 600; color: #000"
-                >
-                  Dr. Paresh G Gandhi
-                  <span
-                    _ngcontent-ng-c3187931997=""
-                    class="dob-age ng-star-inserted"
-                    style="
-                      font-size: 12px;
-                      font-weight: 400;
-                      color: #000;
-                      margin-left: 6px;
-                    "
-                  >
-                    (Male/50y 6m<!----><!---->)
-                    <!----><!----></span
-                  ><!----><!---->
-                </div>
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="datetime-container"
-                style="display: flex; align-items: center"
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="datetime-wrapper"
-                  style="border-radius: 6px; padding: 4px 10px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="datetime-text"
-                    style="font-size: 13px; color: #000; font-weight: 600"
-                  >
-                    23-Jan-2026 | 13:29
-                    <!----><!---->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              _ngcontent-ng-c3187931997=""
-              class="patient-details"
-              style="
-                display: flex;
-                gap: 32px;
-                margin-top: 4px;
-                align-items: flex-start;
-              "
-            >
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
+            <tr>
+              <td
                 style="
-                  width: 45%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
                 "
               >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
+                <img
+                  src="data:image/png;base64,..."
+                  style="
+                    width: 12px;
+                    height: 12px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                  "
+                />
+                Dr. Paresh G Gandhi
+                <span style="font-weight: normal; font-size: 12px"
+                  >(Male/50y 6m)</span
                 >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+              </td>
+              <td
+                style="
+                  text-align: right;
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: bold;
+                  color: black;
+                  vertical-align: middle;
+                "
+              >
+                23-Jan-2026 | 13:29
+              </td>
+            </tr>
+          </table>
+
+          <!-- 2. Two-Column Detail Table -->
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              table-layout: fixed;
+              font-family: Arial, sans-serif;
+              font-size: 11px;
+              color: black;
+            "
+          >
+            <tr>
+              <!-- Left Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-right: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >UHID:</span
                   >
-                    UHID
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      15080600028940
-                    </div>
-                  </div>
+                  <strong>15080600028940</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 65px; color: #555"
+                    >IPD No.:</span
                   >
-                    IPD No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      2605160200090
-                    </div>
-                  </div>
+                  <strong>2605160200090</strong>
                 </div>
-                <!----><!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row-vertical"
-                  style="margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="color: #000"
+                <div style="margin-bottom: 3px; line-height: 1.2">
+                  <span
+                    style="
+                      display: inline-block;
+                      width: 65px;
+                      color: #555;
+                      vertical-align: top;
+                    "
+                    >Address:</span
                   >
-                    Address
-                  </div>
                   <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-full"
-                    style="font-weight: 600; color: #000"
+                    style="
+                      display: inline-block;
+                      width: calc(100% - 70px);
+                      font-weight: bold;
+                    "
                   >
                     I.O.C Road, Shantikunj Society, Chandkheda, Ahmedabad
                   </div>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row hidden"
-                  style="display: flex; align-items: center; margin-bottom: 5px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-top: 3px">
+                  <span style="display: inline-block; width: 85px; color: #555"
+                    >MLC Ref No.:</span
                   >
-                    Diagnosis
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Abnormal prostate (Prostate Cancer), Accidental Exposure
-                      to Other Specified Factors, Dengue fever, Oral cancer
-                      (Mouth cancer)
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
+              </td>
+
+              <!-- Right Column (48% width) -->
+              <td style="width: 48%; vertical-align: top; padding-left: 10px">
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Consultant:</span
                   >
-                    MLC Ref No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
+                  <strong>Dr. Harshika Chandvani</strong>
                 </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="details-column"
-                style="
-                  flex: 1;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-                "
-              >
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Ref. By:</span
                   >
-                    Consultant
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Harshika Chandvani
-                    </div>
-                  </div>
+                  <strong>Dr. Paresh Kanzariya</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >Payer Class:</span
                   >
-                    Ref. By
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      Dr. Paresh Kanzariya
-                    </div>
-                  </div>
+                  <strong>General-self</strong>
                 </div>
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 62px; color: #000"
+                <div style="margin-bottom: 3px">
+                  <span style="display: inline-block; width: 75px; color: #555"
+                    >CR No.:</span
                   >
-                    Payer Class
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      General-self
-                    </div>
-                  </div>
+                  <strong>26000085</strong>
                 </div>
-                <!---->
-                <div
-                  _ngcontent-ng-c3187931997=""
-                  class="detail-row ng-star-inserted"
-                  style="display: flex; align-items: center; margin-bottom: 2px"
-                >
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-label"
-                    style="width: 80px; color: #000"
-                  >
-                    CR No.
-                  </div>
-                  <div
-                    _ngcontent-ng-c3187931997=""
-                    class="detail-value-container"
-                    style="flex: 1"
-                  >
-                    <div
-                      _ngcontent-ng-c3187931997=""
-                      class="detail-value"
-                      style="font-weight: 600; color: #000"
-                    >
-                      26000085
-                    </div>
-                  </div>
-                </div>
-                <!---->
-              </div>
-              <div
-                _ngcontent-ng-c3187931997=""
-                class="mlc-case-tag ng-star-inserted"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 6px;
-                  background: #000;
-                  color: #fff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  padding: 6px 12px;
-                  border-radius: 8px;
-                  white-space: nowrap;
-                  flex-shrink: 0;
-                "
-              >
-                <svg
-                  _ngcontent-ng-c3187931997=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    _ngcontent-ng-c3187931997=""
-                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                  ></path>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="9"
-                    x2="12"
-                    y2="13"
-                  ></line>
-                  <line
-                    _ngcontent-ng-c3187931997=""
-                    x1="12"
-                    y1="17"
-                    x2="12.01"
-                    y2="17"
-                  ></line></svg
-                ><span _ngcontent-ng-c3187931997="">MLC Case</span>
-              </div>
-              <!---->
-            </div>
-          </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 3. MLC Black Bar -->
+        <div
+          style="
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+          "
+        >
+          ⚠ MLC Case
         </div>
         <div
           class="inner-content-box"
@@ -60359,7 +58592,7 @@
                           onerror="this.style.display = 'none'"
                           class="w-full object-contain ng-star-inserted"
                           style="height: 55px"
-                          src="https://storage.googleapis.com/mumbai-gke-qa-bmc/ftp/DigitalSign/CareProfessional/21342.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=test-ftp-files-artem-data-mumb%40prj-bmc-app-1002-01.iam.gserviceaccount.com%2F20260218%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260218T112523Z&amp;X-Goog-Expires=900&amp;X-Goog-SignedHeaders=host&amp;X-Goog-Signature=2b09bf730af76ccd4188c9bb788be6e65d0d8724d8f87391480363c75eea1904fdf8a6bf80ff3cd79ce0fa4cda8a76dce35f9ce4ae8e320c71fb909b9d2a622d1986e80c932061bc37d63b1fc55506713a96f59e6fb76eed0d5739a4c4aff4dbae2276c9514cd48d7dd76dd4fe401b92576e13a9dc3a7760a84f88c27c5e1945172655c26f40fc6e12051a9b4d09b5f3486b2204bdcb48a351a4f455d4a221158f5967def6c4179824979b3a37870976be9dc4cf631bd1800bb37e76500ac0db7e51233029d271a908ff177224b9564f078c86d03ef09831701c0d493b599f09d8383936207f1cb5f2e45680ccab0a0171ba60fe7319e5abb1498b6e2e6df236"
+                          src=""
                         /><!---->
                         <div
                           _ngcontent-ng-c3187931997=""
